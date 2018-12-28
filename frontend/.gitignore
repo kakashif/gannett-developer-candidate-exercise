@@ -1,0 +1,33 @@
+# Project Files
+/node_modules
+/public
+/compiled
+/config/local.*
+.tern-project
+.tags*
+eslint*.xml
+test/testcafe/screenshots
+
+
+# General Files
+
+# OSX Files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Win Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux Files
+.directory
+.Trash-*
+
+*.log
+
+# IDE Files
+/.idea
+/.project

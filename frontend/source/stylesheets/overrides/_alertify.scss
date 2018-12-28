@@ -1,0 +1,34 @@
+// .alertify, .alertify-logs {
+//   z-index: 99999;
+// }
+
+.ajs-content {
+  text-align: center;
+}
+
+.alertify .ajs-dialog {
+  max-width: 35% !important;
+}
+
+
+.alertify .ajs-commands {
+  top: 0;
+  right: 5px;
+  margin: 0 !important;
+}
+
+.alertify.ajs-movable:not(.ajs-maximized) .ajs-header {
+  font-size: 1.4em;
+}
+
+
+/*-----------------------------------------
+MEDIA QUERIES
+------------------------------------------*/
+@media (max-width: 568px) {
+
+  .alertify .ajs-dialog {
+      max-width: 100% !important;
+  }
+
+}

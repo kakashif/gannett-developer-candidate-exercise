@@ -1,0 +1,81 @@
+.director-nav {
+  color: #2e2e2e;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 65px;
+  padding: 5px 0 0 0;
+}
+
+
+
+#navbar-root {
+  background-color: $white;
+
+  &.surveyState {
+    background-color: transparent;
+    .navbar-brand { display: none; }
+  }
+
+  &.navbar-fixed-top {
+    border-width: 0;
+  }
+  .navbar-brand {
+    @media (min-width: $grid-float-breakpoint) {
+      .navbar > .container &,
+      .navbar > .container-fluid & {
+        margin-left: 0;
+      }
+    }
+  }
+  &.navbar-default {
+    .navbar-header {
+      width: 100%;
+      .navbar-brand {
+        color: $brand-primary;
+        font-weight: bold;
+        line-height: $navbar-height;
+        img {
+          height: 100%;
+        }
+      }
+      .navbar-title {
+        color: $navbar-default-brand-color;
+        font-weight: bold;
+        font-size: $font-size-medium;
+        line-height: $navbar-height;
+        padding: 0 $navbar-padding-horizontal 0 0;
+        &.navbar-button {
+          padding: 0;
+        }
+        > span {
+          color: $brand-primary;
+        }
+        .glyphicon {
+          top: 4px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+[notification-badge]:after {
+  content:attr(notification-badge);
+  position:absolute;
+  top:0px;
+  right:0px;
+  font-size:10px;
+  background-color: #f2dede;
+  border:1px solid #ebccd1;
+  color: #a94442;
+  width:20px;
+  height:20px;
+  text-align:center;
+  line-height:20px;
+  border-radius:50%;
+}
+
+[notification-badge = '']:after {
+  content: none;
+}

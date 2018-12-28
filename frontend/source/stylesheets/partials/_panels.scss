@@ -1,0 +1,38 @@
+.panel-warning {
+  margin: 10px 0 20px;
+  border: 1px solid $gray-lighter;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  > .panel-body {
+    color: $gray-light;
+    border: 0;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    a {
+      font-style: normal;
+    }
+    > .glyphicon {
+      margin-right: 8px;
+    }
+    .question-note {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .btn-warning {
+      color: $white;
+      background-color: $brand-warning;
+      width: 100%;
+      margin-top: 10px;
+      &:hover {
+        background-color: darken($brand-warning, 10%);
+        border-color: darken($brand-warning, 10%);
+      }
+    }
+  }
+}
+
+.panel-heading {
+  padding: 20px 0;
+}

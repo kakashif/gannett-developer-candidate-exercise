@@ -1,0 +1,21 @@
+body {
+  color: $grey;
+  background: $light-grey;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  color: $grey;
+}
+
+a,
+[ui-sref],
+[data-ui-sref],
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+  cursor: pointer;
+}

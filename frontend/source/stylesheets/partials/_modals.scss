@@ -1,0 +1,47 @@
+// this fixes an issue where an open modal slighty moves the body to the right
+.modal-open {
+  overflow: inherit;
+  padding-right: inherit !important;
+  overflow: hidden;
+}
+
+.modal-header {
+  padding: 10px;
+  border-bottom: 1px solid $light-grey;
+
+  .modal-title {
+    font-size: 18px;
+  }
+}
+
+.modal-sub-header {
+  padding: 20px;
+  background: #fff;
+  z-index: 2000;
+  background-color: $light-grey;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+}
+
+.modal-body {
+  max-height: calc(100vh - 190px);
+  overflow: auto;
+  padding: 30px 40px;
+}
+
+.modal-footer {
+  padding: 10px;
+  border-top: 1px solid $light-grey;
+}
+
+
+/*-----------------------------------------
+  MEDIA QUERIES
+------------------------------------------*/
+@media (max-width: 568px) {
+  .modal-content {
+    form {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+body {
+  padding: $body-padding-top 0 0 0;
+  margin:  0;
+  background: $light-grey;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+pre {
+  max-height: $pre-scrollable-max-height;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  white-space: pre-wrap
+}
+
+
+hr {
+  border-color: $border-grey;
+  margin: 17px 0;
+}
+
+.page-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.container-fluid {
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+.navbar-brand {
+  color: #2e2e2e !important;
+}
+
+/*-----------------------------------------
+  MEDIA QUERIES
+------------------------------------------*/
+@media (max-width: 568px) {
+  h4 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

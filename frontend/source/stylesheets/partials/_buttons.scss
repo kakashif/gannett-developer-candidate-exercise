@@ -1,0 +1,194 @@
+/* General Button Styling-------------------------*/
+.btn {
+  padding: 10px 20px;
+  outline: 0 !important;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.btn-sm {
+  padding: 5px 10px;
+}
+
+.btn-icon {
+  i {
+    margin-right: 3px;
+  }
+}
+
+.input-group-btn .btn {
+  padding: 6px 12px;
+}
+
+
+/* Primary Button -------------------------*/
+.btn-primary, .create-btn {
+  background-color: $teal;
+  color: $white;
+  border: none;
+  transition: all .3s ease;
+
+  &:focus,
+  &:active {
+    background-color: $teal;
+    color: $white;
+  }
+
+  &:hover {
+    background-color: darken($teal, 10%);
+    color: $white;
+  }
+}
+
+/* Secondary Button -------------------------*/
+
+.btn-secondary {
+  background-color: $dark-teal;
+  color: $white;
+  border: none;
+  transition: all .3s ease;
+
+  &:focus,
+  &:active {
+    background-color: $dark-teal;
+    color: $white;
+  }
+
+  &:hover {
+    background-color: darken($dark-teal, 10%);
+    color: $white;
+  }
+}
+
+/* Cancel Button -------------------------*/
+.btn-cancel {
+  background-color: transparent;
+
+  &:hover {
+    background-color: $gray-lighter;
+  }
+}
+
+/* White Button -------------------------*/
+.btn-white {
+  background-color: $white;
+  border: 1px solid $gray-lighter;
+  color: $teal;
+  transition: all .3s ease;  
+
+  &:hover {
+    border-color: $border-grey;
+    color: darken($teal, 10%);
+  }
+}
+
+/* Gray Button -------------------------*/
+.btn-gray {
+  background-color: $gray-dark;
+  color: $white;
+
+  &:hover {
+    background-color: $gray-darker;
+    color: $white;
+  }
+}
+
+
+/* Primary Button focus, hover, and active overrides -------------------------*/
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.btn-primary.dropdown-toggle.focus,
+.open>.btn-primary.dropdown-toggle:focus,
+.open>.btn-primary.dropdown-toggle:hover {
+  background-color: $dark-teal;
+  color: $white;
+}
+
+
+/* Default Button -------------------------*/
+.btn-default {
+  background-color: $slate;
+  color: $white;
+  border: none;
+  transition: all .3s ease;
+
+  &:focus,
+  &:active {
+    background-color: $slate;
+    color: $white;
+  }
+
+  &:hover {
+    background-color: darken($slate, 10%);
+    color: $white;
+  }
+}
+
+
+/* Dropdown Toggle Button -------------------------*/
+button.dropdown {
+  border-radius: 0;
+  padding: 7px 10px 3px;
+  background: $white;
+  border: 2px solid $slate;
+  color: $slate;
+  &:hover, &:focus,
+  .open>.dropdown-toggle.focus,
+  .open>.dropdown-toggle:focus,
+  .open>.dropdown-toggle:hover {
+    background-color: lighten($slate, 30%);
+    color: $slate;
+  }
+}
+
+.dropdown {
+  display: inline-block;
+  a.btn {
+    top: 0;
+    padding: 5px 10px;
+    font-size: 1.5em;
+  }
+  .dropdown-menu {
+    padding: 0;
+    text-align: center;
+    li {
+      border-bottom: 1px solid $light-grey;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+      a {
+        display: block;
+        padding: 10px 0;
+        font-size: .9em;
+      }
+    }
+  }
+}
+
+
+/* Warning Button -------------------------*/
+.btn-warning {
+  background-color: $white;
+  border: 2px solid $brand-warning;
+  color: $brand-warning;
+
+  &:focus,
+  &:active {
+    color: $brand-warning;
+    background-color: $white;
+    border: 2px solid $brand-warning;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: darken($brand-warning, 10%);
+    border-color: darken($brand-warning, 10%);
+  }
+}

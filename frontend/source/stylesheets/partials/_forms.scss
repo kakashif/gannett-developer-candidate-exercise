@@ -1,0 +1,109 @@
+form {
+  border-radius: $border-radius-small;
+  padding: 20px;
+  padding: 0;
+  background-color: $white;
+
+  h1, h2, h3, h4, h5 {
+    text-align: center;
+    margin: 4px 0 10px 0;
+  }
+
+  hr {
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+
+  input.form-control {
+    outline: 0 !important;
+    &:focus {
+      outline: 0 !important;
+      border-color: #afb7ba;
+      box-shadow: inset 0 0 5px #c5ced1;
+      background: $light-grey;
+    }
+  }
+}
+
+.form-control {
+  &:focus {
+    outline: 0 !important;
+    border-color: #afb7ba;
+    box-shadow: inset 0 0 5px #c5ced1;
+    background: $light-grey;
+  }
+}
+
+.form-skinny {
+  min-width: $form-min-width;
+  max-width: $form-max-width;
+  width: $form-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Date Picker --------------------------*/
+
+
+// .uib-daypicker, .uib-monthpicker, .uib-yearpicker {
+//   tbody:before {
+//     content: "-";
+//     display: block;
+//     line-height: 1em;
+//     color: transparent;
+//   }
+//   margin: 10px;
+//   td, th {
+//     border: 1px solid $border-grey;
+//   }
+//   .btn-default,
+//   .btn-default:focus {
+//     background: $light-grey;
+//     border: none;
+//     border-radius: 0;
+//     color: $slate;
+//     &:hover {
+//       background: darken($light-grey, 10%);
+//     }
+//   }
+//   .btn-default.active {
+//     background: $slate;
+//     span {
+//       color: $white;
+//     }
+//   }
+// }
+//
+// .uib-datepicker-popup {
+//   &.dropdown-menu {
+//     padding: 0 0 10px 0;
+//   }
+//   .btn-info, .btn-success {
+//     background: $teal;
+//     border: none;
+//     &:hover {
+//       background: darken($teal, 10%);
+//       border: none;
+//     }
+//   }
+//   .btn-info.active {
+//     background: $slate;
+//     color: $white;
+//   }
+//   .btn-danger {
+//     background: $slate;
+//     border: none;
+//     &:hover {
+//       background: darken($slate, 10%);
+//       border: none;
+//     }
+//   }
+//   :focus {
+//     outline: none;
+//     box-shadow: none;
+//   }
+// }
+//
+//
+//

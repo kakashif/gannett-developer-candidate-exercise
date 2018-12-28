@@ -1,0 +1,46 @@
+#navbar-root-footer {
+  background-color: $white;
+  margin-top: 40px;
+  &.navbar {
+    border-width: 0;
+  }
+  .navbar-brand {
+    @media (min-width: $grid-float-breakpoint) {
+      .navbar > .container &,
+      .navbar > .container-fluid & {
+        margin-left: 0;
+      }
+    }
+  }
+  &.navbar {
+    .navbar-header {
+      width: 100%;
+      .navbar-brand {
+        color: $brand-primary;
+        font-weight: bold;
+        line-height: $navbar-height;
+        img {
+          height: 100%;
+        }
+      }
+      .navbar-title {
+        color: $navbar-default-brand-color;
+        font-weight: bold;
+        font-size: $font-size-medium;
+        line-height: $navbar-height;
+        padding: 0 $navbar-padding-horizontal 0 0;
+        &.navbar-button {
+          padding: 0;
+        }
+        > span {
+          color: $brand-primary;
+        }
+        .glyphicon {
+          top: 4px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+////////////////////
+// font overrides //
+////////////////////
+
+// path to font icon files inside compiled folder
+$font-path: 'fonts/';
+$icon-font-path: $font-path !default;
+
+// global font family and font size
+$font-family-base: 'Montserrat', Helvetica, Arial, sans-serif !default;
+$font-size-base: 14px !default;
+$font-size-medium: 18px !default;
+$font-size-large: 24px !default;

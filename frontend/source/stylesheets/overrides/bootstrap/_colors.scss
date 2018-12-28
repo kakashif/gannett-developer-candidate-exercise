@@ -1,0 +1,49 @@
+/////////////////////
+// color overrides //
+/////////////////////
+
+$gray-base: #000 !default;
+$gray-darker: lighten($gray-base, 13.5%) !default;
+$gray-dark: lighten($gray-base, 20%) !default;
+$gray: lighten($gray-base, 33.5%) !default;
+$gray-light: lighten($gray-base, 46.7%) !default;
+$gray-lighter: lighten($gray-base, 93.5%) !default;
+
+$white: #fff !default;
+$white-dark: darken($white, 0.5%) !default;
+
+$brand-primary: #30ba98 !default;
+$brand-secondary: #2e2e2e !default;
+$brand-success: #3aa959 !default;
+$brand-success-dark: darken($brand-success, 5%);
+$brand-info: #5089ec !default;
+$brand-warning: #f2a52c !default;
+$brand-danger: #d9534f !default;
+
+// global body background adn text colors
+$body-bg: $brand-secondary !default;
+$text-color: $brand-primary !default;
+
+// global link colors
+$link-color: $brand-primary !default;
+$link-hover-color: darken($link-color, 15%) !default;
+
+// global navbar colors
+$navbar-default-brand-color: $brand-secondary !default;
+$navbar-default-brand-hover-color: $brand-primary !default;
+$navbar-default-color: $brand-secondary !default;
+$navbar-default-bg: $white !default;
+$navbar-default-border: $brand-primary !default;
+
+
+// Project Colors
+$maroon: #551229;
+$pink: #cc3051;
+$grey: #545454;
+$teal: #30ba98;
+$dark-teal: #00a2a5;
+$slate: #a0a3a5;
+$light-grey: #eef3f6;
+$border-grey: #d3dadd;
+
+$lighter-grey: #FCFBFF;

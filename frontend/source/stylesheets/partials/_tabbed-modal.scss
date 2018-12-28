@@ -1,0 +1,54 @@
+.tabbed-modal {
+  .modal-body {
+    min-height: 400px;
+    height: 100%;
+    overflow: auto;
+    padding: 0;
+  }
+
+  .nav-tabs {
+    width: 25%;
+    min-height: 400px;
+    float: left;
+    border-bottom: none;
+    > li {
+      margin-bottom: 0;
+      border-bottom: 1px solid $border-grey;
+      background-color: 0;
+      transition: background-color 0.25s;
+      &.disabled {
+        background-color: $gray-light;
+        transition: background-color 0.25s;
+        a:hover { background-color: $gray-light; }
+      }
+      a {
+        margin-right: 0;
+        padding: 15px;
+        border: none;
+        border-radius: 0;
+        color: $grey;
+        &:hover {
+          transition: background-color 0.25s;
+          background: $light-grey;
+        }
+      }
+      &.active a {
+        transition: background-color 0.25s;
+        background: $teal;
+        color: $white;
+      }
+    }
+  }
+  .nav-stacked > li+li {
+    margin-top: 0;
+  }
+  .tab-content {
+    width: 75%;
+    min-height: 50vh;
+    max-height: 75vh;
+    float: left;
+    padding: 30px;
+    border-left: 1px solid $border-grey;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge;" charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <!-- Disable caching during development -->
+  <meta http-equiv="pragma" content="no-cache">
+
+  <title>My Delicious Articles</title>
+
+  <base href="/">
+
+  <!-- build:css(public) main.css -->
+    <link href="main.css" rel="stylesheet">
+  <!-- endbuild -->
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+ </head>
+  <!-- build:js(node_modules) vendor.js -->
+    <script src="babel-polyfill/dist/polyfill.js"></script>
+    <script src="angular/angular.js"></script>
+    <script src="angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script src="angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="angular-animate/angular-animate.js"></script>
+    <script src="ngstorage/ngStorage.js"></script>
+    <script src="angular-jwt/dist/angular-jwt.js"></script>
+    <script src="alertifyjs/build/alertify.js"></script>
+    <script src="angular-uuid/angular-uuid.js"></script>
+    <script src="angular-filter/dist/angular-filter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.0/angular-sanitize.js"></script>
+    <script src="angular-validation-match/dist/angular-validation-match.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js(source) app.js -->
+    <script src="ng-AlertifyJS.js"></script>
+    <script src="index.js"></script>
+
+
+
+    <!-- Templates -->
+    <script src="../public/templates.js"></script>
+
+
+    <!-- Services -->
+    <script src="services/dat_root.js"></script>
+
+
+    <!-- Components -->
+    <script src="components/general_header/cfg_header.js"></script>
+    <script src="components/general_header/ctl_header.js"></script>
+    <script src="components/general_header/dir_header.js"></script>
+
+    <script src="components/general_footer/cfg_footer.js"></script>
+    <script src="components/general_footer/dir_footer.js"></script>
+
+    <!-- States -->
+    <script src="states/root/cfg_root.js"></script>
+    <script src="states/root/ctl_root.js"></script>
+
+  <!-- endbuild -->
+
+</head>
+<body ng-app="application" ng-strict-di>
+  <header ui-view="header"></header>
+  <div class="container-fluid" ui-view="content" ng-class="{ loading: stateLoading }"></div>
+  <footer ui-view="footer"></footer>
+</body>
+</html>
