@@ -1,0 +1,9 @@
+{
+  "presets": ["env"],
+  "minified": true,
+  "env": {
+    "development": {
+      "retainLines": true
+    }
+  }
+}
