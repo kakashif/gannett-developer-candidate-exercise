@@ -24,6 +24,7 @@ function RootController(
   function resolver() {
     return RootSrv.get()
       .then(data => {
+        ctrl.profileId = data.profileId;
         // Build the expiration date string:
         const expiration_date = new Date();
         let profile_cookie = '';

@@ -1,7 +1,7 @@
-<div class="article-container">
+<div id="{ctrl.profileId}" class="article-container" class="{ctrl.theme}" data-test="theme">
     <div class="panel-heading">
       <h1 style="display:inline"
-          data-test="articles"
+          data-test="article-headline"
           ng-style="{color: ctrl.theme === 'rare' ? '#DC143C' : '#8B4513'}">
           My Delicious Articles
       </h1>
@@ -9,15 +9,19 @@
     </div>
 
     <div>
-      <ul ng-repeat="article in ctrl.articles">
-        <li class="article">
-          <h3 class="article-title">
-            <a href="{{article.href}}" ng-style="{color: ctrl.theme === 'rare' ? '#DC143C' : '#8B4513'}">
+      <ul ng-repeat="article in ctrl.articles" data-test="articles">
+        <li class="article" data-test="article">
+          <h3 class="article-title" data-test="article-title">
+            <a href="{{article.href}}"
+               ng-style="{color: ctrl.theme === 'rare' ? '#DC143C' : '#8B4513'}"
+               data-test="article-title-anchor">
               {{article.title}}
             <a>
           </h3>
-          <p class="summary">
-            <a href="{{article.href}}" ng-style="{color: ctrl.theme === 'rare' ? '#DC143C' : '#8B4513'}">
+          <p class="summary" data-test="article-summary">
+            <a href="{{article.href}}"
+               ng-style="{color: ctrl.theme === 'rare' ? '#DC143C' : '#8B4513'}"
+               data-test="article-summary-anchor">
               {{article.summary}}
             </a>
           </p>
