@@ -20,12 +20,16 @@ function RootController(
 
   const ctrl = this;
 
-
   function resolver() {
     return RootSrv.get()
       .then(data => {
-        ctrl.profile = data;
-        console.log(ctrl.profile)
+        return RootSrv.getContents(data.profileId)
+        .then(content => {
+          ctrl.articles = content.articles;
+          ctrl.theme = content.theme;
+          console.log(ctrl.articles);
+          console.log(ctrl.theme)
+        })
       })
       .catch(error => {
         $log.error('Error retrieving profile:', error);

@@ -9,12 +9,12 @@ function RootSrv($config, $http, $sce) {
   };
 
   function getProfile() {
-    return $http.get(`https://peaceful-springs-7920.herokuapp.com/profile/`)
+    return $http.get(`${$config.url}/profile`)
     .then(success => success.data);
   }
 
   function getProfileContents(profileId) {
-    return $http.get(`${$config.url}profile/${profileId}`)
+    return $http.get(`${$config.url}/content/` + profileId)
     .then(success => success.data);
   }
 }

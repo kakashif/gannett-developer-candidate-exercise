@@ -13,8 +13,8 @@ const config = convict({
     env: 'NODE_ENV',
   },
   api: {
-    doc: 'API Endpoint URL with Trailing Slash',
-    default: 'http://localhost:8091/',
+    doc: 'API Endpoint URL',
+    default: 'http://localhost:3002',
     format: 'url',
     env: 'API_ENDPOINT',
     arg: 'api',
